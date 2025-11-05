@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Window Object Demo</h2>
+<button onclick="info()">Show Info</button>
+<button onclick="openWin()">Open</button>
+<button onclick="closeWin()">Close</button>
+<p id="out"></p>
+<script>
+let w;
+function info(){
+ document.getElementById("out").innerHTML=
+ "Width:"+window.innerWidth+" Height:"+window.innerHeight;
+}
+function openWin(){ w=window.open("https://www.google.com"); }
+function closeWin(){ if(w) w.close(); }
+</script>
+</body>
+</html>

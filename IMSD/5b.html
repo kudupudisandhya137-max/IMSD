@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Tilted Background (Horizontal Rotate)</title>
+    <style>
+        /* Make the page scrollable to see the fixed background */
+        body {
+            min-height: 300vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Fixed, tilted background image */
+        .tilted-bg {
+            position: fixed; /* Stays in place while scrolling */
+            left: 50%;       /* Centers horizontally */
+            top: 50vh;       /* Places halfway down the viewport */
+            transform: translate(-50%, -50%) rotateZ(-12deg); /* Centers and tilts */
+            width: 60vw;
+            height: 40vh;
+            background-image: url('shinchan.png'); /* Replace with your image file */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            opacity: 0.95;
+            pointer-events: none; /* Doesn’t block clicks */
+            z-index: 9999;
+        }
+
+        /* Some scrolling content */
+        .content {
+            padding: 40px;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="tilted-bg"></div>
+
+    <div class="content">
+        <h2>24B11CS084</h2>
+        <h1>Scroll Down to See the Fixed Tilted Background</h1>
+        <p>This webpage demonstrates how to position a fixed, tilted background image halfway down the page using CSS. 
+        The image remains in place as you scroll, creating a visually appealing layered effect.</p>
+        <p>Keep scrolling to notice that the background image stays in position while the text moves, showing the power of 
+        CSS positioning and transformations.</p>
+    </div>
+</body>
+</html>

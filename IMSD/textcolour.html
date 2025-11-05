@@ -1,0 +1,27 @@
+<head>
+  <title>JS Example</title>
+</head>
+<body>
+
+<h2 id="greeting">Hello!</h2>
+<button onclick="changeText()">Click  to changetext</button>
+<button onclick="changeColor()">Click To changecolor</button>
+<button onclick="changeCol()">Click To changecolor</button>
+<button onclick="changefont()">Click Me again to return</button>
+
+<script>
+  function changeText() {
+    document.getElementById("greeting").innerHTML = "You clicked the button!";
+  }
+ function changeColor() {
+    document.getElementById("greeting").style.color = "red";
+  }
+   function changeCol() {
+    document.getElementById("greeting").style.color = "black";
+  }
+  function changefont() {
+    document.getElementById("greeting").innerHTML = "Hello!";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+        body{
+            margin:0;
+        }
+        body::before{
+            content:"";
+            position:fixed;
+            top:50%;
+            width:100%;
+            height:400px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ie7aqSB44PVmFshCTNSJylqu2j7UPtjOkw&s');
+            background-repeat: no-repeat;
+            background-position: center;9mm  
+            background-size: cover;
+            transform:rotate(-10deg);/*title the image*/
+            z-index:-1;
+        }
+        .content {
+      height: 2000px;
+      padding: 20px;
+    }
+    </style>
+</head>
+<body> 
+    <div class="content">
+    <h1>Scroll Down</h1>
+    <p>This background image is tilted and fixed in place!</p>
+  </div>
+</body>
+</html>

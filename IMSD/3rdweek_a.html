@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lan="en">
+        <meta charset="UTF-8">
+        <title>HTML5 Semantic Elements Demo</title>
+        <head>
+    <style>
+        body {
+         font-family: Arial, Helvetica, sans-serif;
+         margin: 0;    
+        }
+        header,nav,footer {
+            background-color: #333;
+            color: aliceblue;
+            padding: 1em;
+        }
+        nav a {
+            color: antiquewhite;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            padding: 20px;
+        }
+        article {
+            flex: 3;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+        figure{
+            margin: 0;
+            text-align: center;
+        }
+        figcaption 
+        {
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <h4>24B11CS084</h4>
+        <header>
+            <h1>My Blog Website</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Articles</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contat</a>
+        </nav>
+        <main>
+            <article>
+                <h2>Understanding HTML5 Semantic Tags</h2>
+                <p><span style="font-weight: bold;">HTML5</span>
+                Introduced Semantic elements that make your code more readable and accessible.</p>
+            <figure>
+                <img src="C:\Users\sindh\OneDrive\Pictures\download.jpeg" height="200px" width="250px">
+                <figcaption>Figure: Illustartion of HTML5 layout</figcaption>
+            </figure>
+            <section>
+                <h3>Why Use semantic tags?</h3>
+                <p>Semantic tags help search engines and screen readers understand the structure of your webpage.</p>
+            </section>
+               </article>
+               <aside>
+                <h3>Related Posts</h3>
+                <ul>
+                    <li><a href="#">Introduction to HTML</a></li>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">JavaScript for Beginnners</a></li>
+                </ul>
+               </aside>
+        </main>
+        <footer>
+            <p>&copy;2025 MY BLOG. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

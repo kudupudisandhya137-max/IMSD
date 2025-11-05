@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Voter Check</title></head>
+<body>
+<h2>Voter Eligibility</h2>
+<button onclick="check()">Check Eligibility</button>
+<div id="res"></div>
+<script>
+function check(){
+ let name=prompt("Enter name:");
+ let age=parseInt(prompt("Enter age:"));
+ let msg=(age>=18)?"Eligible":"Not Eligible";
+ document.getElementById("res").innerHTML=<b>${name}</b> is ${msg} to vote.;
+}
+</script>
+</body>
+</html>

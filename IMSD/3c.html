@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styles Example</title>
+
+    <!-- 🔸 Internal CSS -->
+    <style>
+        h1 {
+            color: blue;           /* Selector: h1, Property: color, Value: blue */
+            font-family: Arial;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        #unique {
+            border: 2px solid red;
+        }
+    </style>
+
+    <!-- 🔸 External CSS (concept only) -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+
+    <!-- 🔸 Inline CSS -->
+    <p style="color: green; font-size: 20px;">
+        This is a paragraph with inline CSS.
+    </p>
+
+    <!-- Uses Internal Style -->
+    <h1>This heading is styled using internal CSS</h1>
+
+    <p class="highlight">This paragraph uses a class selector</p>
+
+    <p id="unique">This paragraph uses an ID selector</p>
+
+</body>
+</html>
